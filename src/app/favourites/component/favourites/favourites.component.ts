@@ -21,8 +21,6 @@ export class FavouritesComponent {
 
     this.favourites$ = this.favouriteService
       .getFavourites();
-
-      console.log(this.favourites$.subscribe());
   }
 
 }

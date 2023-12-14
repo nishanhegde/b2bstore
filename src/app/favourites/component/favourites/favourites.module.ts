@@ -13,13 +13,17 @@ import {
   provideDefaultConfig,
   UrlModule,
 } from '@spartacus/core';
-import { PromotionsModule } from '@spartacus/storefront';
+import { PromotionsModule, SpinnerModule } from '@spartacus/storefront';
 
 import { FavouritesComponent } from './favourites.component';
 
 @NgModule({
   imports: [
-
+    CommonModule,
+    UrlModule,
+    RouterModule,
+    I18nModule,
+    SpinnerModule,
   ],
   providers: [
     provideDefaultConfig(<CmsConfig>{

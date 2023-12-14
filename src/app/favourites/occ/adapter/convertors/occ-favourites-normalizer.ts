@@ -23,7 +23,7 @@ export class OccFavouriteNormalizer implements Converter<Occ.Favourite, Favourit
     if (target === undefined) {
       target = { ...(source as any) } as Favourite;
     }
-    console.log(target);
+
     return target;
   }
 }
