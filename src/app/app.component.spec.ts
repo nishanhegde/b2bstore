@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'aryztab2bstore'`, () => {
+  it(`should have as title 'b2bstore'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('aryztab2bstore');
+    expect(app.title).toEqual('b2bstore');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('aryztab2bstore app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('b2bstore app is running!');
   });
 });
